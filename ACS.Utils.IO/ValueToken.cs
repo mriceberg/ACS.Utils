@@ -1,6 +1,6 @@
 ﻿namespace ACS.Utils.IO
 {
-    public class ValueToken<T>
+    public class ValueToken<T> : Token
     {
         public T Value { get; private set; }
         public ValueTokenFormatter<T> Formatter { get; private set; }
@@ -16,5 +16,7 @@
         }
 
         public override string ToString() => (Formatter != null) ? Formatter.Format(Value) : Value.ToString();
+
+        protected override void DoAccept(TokenVisitor visitor) => visitor.Visit(this);
     }
 }

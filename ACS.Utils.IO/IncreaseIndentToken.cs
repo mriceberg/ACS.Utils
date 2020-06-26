@@ -1,6 +1,6 @@
 ﻿namespace ACS.Utils.IO
 {
-    public abstract class ControlToken : Token
+    public class IncreaseIndentToken : ControlToken
     {
         protected override void DoAccept(TokenVisitor visitor) => visitor.Visit(this);
     }
