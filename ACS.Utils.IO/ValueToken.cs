@@ -1,6 +1,6 @@
 ﻿namespace ACS.Utils.IO
 {
-    public class ValueToken<T> : Token
+    public abstract class ValueToken<T> : Token
     {
         public T Value { get; private set; }
         public ValueTokenFormatter<T> Formatter { get; private set; }
