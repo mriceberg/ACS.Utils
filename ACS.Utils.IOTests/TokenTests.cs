@@ -15,6 +15,21 @@ namespace ACS.Utils.IOTests
             actualToken.Accept(null);
         }
 
+        [TestMethod]
+        public void Accept_ValidVisitor_OK()
+        {
+            TestTokenVisitor actualVisitor = MakeTestTokenVisitor();
+            Token actualToken = MakeToken();
+            actualToken.Accept(actualVisitor);
+
+            bool actualResult = actualVisitor.CorrectMethodWasCalled;
+
+            Assert.IsTrue(actualResult);
+        }
+
         protected abstract Token MakeToken();
+        protected virtual Type GetTestedTokenType() => MakeToken().GetType();
+        protected virtual TestTokenVisitor MakeTestTokenVisitor(bool throwIfCallIsNotAllowed = false, bool multipleCallsAllowed = false) 
+            => new TestTokenVisitor(new Type[] { GetTestedTokenType() }, throwIfCallIsNotAllowed, multipleCallsAllowed);
     }
 }
