@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACS.Utils.IO", "ACS.Utils.IO\ACS.Utils.IO.csproj", "{F5C2BE5D-5B93-469F-BB3C-3615B96C6AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACS.Utils.IOTests", "ACS.Utils.IOTests\ACS.Utils.IOTests.csproj", "{284D885D-F970-4E4B-A1DD-655AACFE2A65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5C2BE5D-5B93-469F-BB3C-3615B96C6AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C2BE5D-5B93-469F-BB3C-3615B96C6AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C2BE5D-5B93-469F-BB3C-3615B96C6AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C2BE5D-5B93-469F-BB3C-3615B96C6AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284D885D-F970-4E4B-A1DD-655AACFE2A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284D885D-F970-4E4B-A1DD-655AACFE2A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284D885D-F970-4E4B-A1DD-655AACFE2A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284D885D-F970-4E4B-A1DD-655AACFE2A65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B454900D-9036-42C9-9CA8-AB6540A5F0F6}
+	EndGlobalSection
+EndGlobal
