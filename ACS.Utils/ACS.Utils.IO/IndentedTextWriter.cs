@@ -13,6 +13,7 @@ namespace ACS.Utils.IO
         public IndentedTextWriter(TextWriter writer, string indentText = "\t", int indentCount = 0)
         {
             if (String.IsNullOrEmpty(indentText)) throw new ArgumentNullException(nameof(indentText));
+            if (indentCount < 0) throw new ArgumentOutOfRangeException();
 
             this._writer = writer;
             this.indentCount = indentCount;
